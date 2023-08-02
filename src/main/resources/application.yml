@@ -1,0 +1,19 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/product-service
+  application:
+    name: product-service
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8671/eureka
+  instance:
+    hostname: localhost
+server:
+  port: 0
+
+
+
